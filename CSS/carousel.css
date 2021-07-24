@@ -1,0 +1,94 @@
+.carousel__container{
+  width: 100%;
+}
+
+.carousel{
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente{
+	position: absolute;
+	display: block;
+	width: 1.8em;
+	height: 60px;
+	border: none;
+	top: calc(50% - 60px);
+	cursor: pointer;
+	line-height: 30px;
+  text-align: center;
+	font-size: 1.5em;
+	background: none;
+	color: #000;
+  z-index: 100;
+}
+
+.carousel__anterior {
+	left: 0;
+}
+
+.carousel__siguiente {
+	right: 0;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+  width: 100%;
+}
+
+.elemento__content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__text h3{
+  text-align: center;
+}
+
+.elemento__content .content__img{
+  display: none;
+}
+
+.elemento__content .content__text{
+  margin-top: 2em;
+  padding: 0 50px;
+  width: 100%;
+  font-size: 1em;
+  color: #000;
+}
+
+@media screen and (min-width: 550px){
+  .elemento__content .content__img{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .elemento__content .content__text{
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 730px){
+  .carousel__container{
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .carousel__container{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel__container{
+    width: 75%;
+  }
+}
