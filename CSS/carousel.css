@@ -91,4 +91,9 @@
   .carousel__container{
     width: 75%;
   }
+
+  .elemento__content .content__text{
+    font-size: 1.5em;
+  }
+
 }
