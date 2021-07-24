@@ -95,7 +95,7 @@ body{
 .experience__img{
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 250px;  
 }
 
 .experience__img img{
@@ -104,7 +104,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .experience__text{
@@ -119,21 +119,7 @@ body{
 }
 
 @media screen and (min-width: 550px) {
-  .main__experience{
-    min-height: 80vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
-  }
 
-  .two{
-    grid-column-start: 2;
-    grid-row-start: 2;
-  }
-
-  .three{
-    grid-column-start: 1;
-    grid-row-start: 3;
-  }
 }
 
 @media screen and (min-width: 768px){
@@ -158,17 +144,22 @@ body{
   }
 
   .main__about{
-    height: 60vh;
+    min-height: 60vh;
   }
 
 }
 
 @media screen and (min-width: 1200px){
   .home__background{
-    height: 100vh;
+    min-height: 100vh;
   }
+
+  .main__content{
+    min-height: 100vh;
+  }
+
   .main__about{
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .main__about h1{
