@@ -13,6 +13,11 @@ header{
   z-index: 1000;
 }
 
+.space{
+  height: 61px;
+  width: 100%;
+}
+
 .header__tittle{
   display: flex;
   align-items: center;
