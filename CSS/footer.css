@@ -53,14 +53,10 @@ footer{
   text-align: justify;
 }
 
-.footer__content li{
-  margin-bottom: 4px;
-  cursor: pointer;
-}
-
 .footer__content li a{
   color: #fff;
   text-decoration: none;
+  margin-bottom: 4px;
 }
 
 @media screen and (min-width: 490px) { 
