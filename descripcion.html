@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="shortcut icon" href="./IMG/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="./CSS/descripcion.css">
   <title>Microsft Word</title>
@@ -12,24 +13,61 @@
   <header>
     <div class="header__tittle">
       <img src="./IMG/logo.png" alt="Logo">
-      <span>The Student's Blog</span>
+      <a href="index.html">The Student's Blog</a>
     </div>
-    <nav class="header__navbar">
+    <nav class="header__navbar-2">
       <ul  class="navbar__list">
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#aboutus">Nosotros</a></li>
-        <li><a href="#experience">Servicios</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#autoaprendizaje">Autoaprendizaje</a></li>
-        <li><a href="#help">Ayuda</a></li>
-        <!-- <li><i class="fas fa-adjust"></i></li> -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Recomendaciones</a></li>
+        <li><i class="fas fa-adjust"></i>Cambiar Tema</li>
       </ul>
     </nav>
     <div class="header__menu-toggle">
       <i class="fas fa-bars"></i>
     </div>
   </header>
-
   <div class="space"></div>
+  <!-- <footer>
+    <div class="footer__info">
+      <div class="footer__media">
+        <span>Encuentranos en:</span><br>
+        <a href="https://www.facebook.com/ethan.ruiz.5243/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/ethan._estrada/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/EthanRuiz9/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ethan-ruiz-a4172a208/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/ethanrestrada" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="footer__copyright">
+        <span>&#169Todos los derechos reservados</span>
+      </div>
+    </div>
+    <div class="footer__contact">
+      <span><i class="fas fa-envelope"></i>studentblog@gmail.com</span>
+      <span><i class="fas fa-phone-alt"></i>+502 4580-5690</span>
+      <span>The Student's Blog</span>
+    </div> 
+    <div class="footer__content">
+      <ul>
+        <li><a href="index.html">Volver al inicio</a></li>
+        <li>Nuestros cursos</li>
+        <li>Terminos y condiciones</li>
+      </ul>
+    </div>
+  </footer> -->
+  <script>
+    let menuToggle = document.querySelector(".header__menu-toggle");
+    let menuToggleIcon = document.querySelector(".header__menu-toggle i");
+    menuDesc = document.querySelector(".header__navbar-2");
+
+    menuToggle.addEventListener("click", ()=> {
+    menuDesc.classList.toggle("active2");
+
+      if(menuDesc.classList.contains("active2")){
+        menuToggleIcon.setAttribute("class", "fa fa-times");
+      } else{
+        menuToggleIcon.setAttribute("class","fa fa-bars");
+      }
+    });
+  </script>
 </body>
 </html>

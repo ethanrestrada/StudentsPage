@@ -34,10 +34,10 @@ header{
   height: 32px;
   width: 32px; 
   margin-right: 8px;
-  filter: invert(1);
 }
 
-.header__navbar{
+.header__navbar,
+.header__navbar-2{
   position: absolute;
   top: 60px;
   left: 0;
@@ -52,17 +52,21 @@ header{
   height: 345px;
 }
 
+.active2{
+  height: 165px;
+}
+
 .navbar__list li{
   display: block;
   text-align: center;
   color: #fff;
   cursor: pointer;
+  line-height: 55px;
 }
 
 .navbar__list li a{
   color: #fff;
   text-decoration: none;
-  line-height: 55px;
   width: 100%;  
 }
 
@@ -88,7 +92,8 @@ header{
       font-weight: 700;
     }
 
-  .header__navbar{
+  .header__navbar,
+  .header__navbar-2{
     width: 60%;
     text-align: right;
     height: auto;
