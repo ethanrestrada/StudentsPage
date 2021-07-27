@@ -16,6 +16,11 @@ footer{
   margin-bottom: 15px;
 }
 
+.footer__media a{
+  color: #fff;
+  text-decoration: none;
+}
+
 .footer__media .fab{
   font-size: 1.28em;
   margin-top: 8px;

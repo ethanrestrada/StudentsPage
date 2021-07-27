@@ -25,10 +25,16 @@ header{
   min-width: 30%;
 }
 
+.header__tittle a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .header__tittle img{
   height: 32px;
   width: 32px; 
   margin-right: 8px;
+  filter: invert(1);
 }
 
 .header__navbar{
@@ -49,6 +55,8 @@ header{
 .navbar__list li{
   display: block;
   text-align: center;
+  color: #fff;
+  cursor: pointer;
 }
 
 .navbar__list li a{
@@ -56,6 +64,10 @@ header{
   text-decoration: none;
   line-height: 55px;
   width: 100%;  
+}
+
+.navbar__list li .fas{
+  margin-right: 5px;
 }
 
 .header__menu-toggle{
