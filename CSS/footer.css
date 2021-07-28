@@ -24,7 +24,7 @@ footer{
 .footer__media .fab{
   font-size: 1.28em;
   margin-top: 8px;
-  margin-right: 8px;
+  margin-right: 0.5em;
   cursor: pointer;
 }
 
@@ -33,7 +33,7 @@ footer{
 }
 
 .footer__contact .fas{
-  margin-right: 5px;
+  margin-right: 0.3em;
 }
 
 .footer__contact span{
@@ -61,12 +61,18 @@ footer{
 
 @media screen and (min-width: 490px) { 
   footer{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 48% 48%;
   }
 
   .footer__info{
     grid-row-start: 2;
     grid-column-start: span 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__media .fab{
+    font-size: 1.4em;
   }
 }
 
