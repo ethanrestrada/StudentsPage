@@ -15,19 +15,13 @@
       <img src="./IMG/logo.png" alt="Logo">
       <a href="index.html">The Student's Blog</a>
     </div>
-    <nav class="header__navbar-2">
-      <ul  class="navbar__list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">Recomendaciones</a></li>
-        <li><i class="fas fa-adjust"></i>Cambiar Tema</li>
-      </ul>
-    </nav>
-    <div class="header__menu-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
   </header>
   <div class="space"></div>
-  
+  <main>
+    <div class="main__img">
+      <img src="./IMG/word.png" alt="">
+    </div>
+  </main>
   <!-- <footer>
     <div class="footer__info">
       <div class="footer__media">
@@ -55,20 +49,5 @@
       </ul>
     </div>
   </footer> -->
-  <script>
-    let menuToggle = document.querySelector(".header__menu-toggle");
-    let menuToggleIcon = document.querySelector(".header__menu-toggle i");
-    menuDesc = document.querySelector(".header__navbar-2");
-
-    menuToggle.addEventListener("click", ()=> {
-    menuDesc.classList.toggle("active2");
-
-      if(menuDesc.classList.contains("active2")){
-        menuToggleIcon.setAttribute("class", "fa fa-times");
-      } else{
-        menuToggleIcon.setAttribute("class","fa fa-bars");
-      }
-    });
-  </script>
 </body>
 </html>

@@ -49,11 +49,7 @@ header{
 }
 
 .active{
-  height: 345px;
-}
-
-.active2{
-  height: 165px;
+  height: 280px;
 }
 
 .navbar__list li{
