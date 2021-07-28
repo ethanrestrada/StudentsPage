@@ -10,13 +10,18 @@
 }
 
 body{
-  background: #e0e0e0;
+  background: #fafafa;
+}
+
+main{
+  width: 100%;
+  margin-bottom: 3em;
 }
 
 .main__img{
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 350px;
 }
 
 .main__img img{
@@ -26,4 +31,135 @@ body{
   width: 100%;
   height: 100%;
   object-fit: top;
+}
+
+.img__text{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.img__text h1{
+  width: 75%;
+  text-align: center;
+}
+
+.main__content{
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 2em;
+}
+
+.content__text{
+  grid-column-start: span 2;
+}
+
+.text__date{
+  margin-bottom: 0.5em;
+}
+
+hr{
+  border: 0;
+  border-top: 1px solid #616970;
+}
+
+.text__date hr{
+  margin: 1rem 0;
+}
+
+.text__author{
+  display: flex;
+  align-items: center;
+  margin: 0.3em 0;
+}
+
+.text__author .fas{
+  font-size: 1.8em;
+  margin-right: 0.5em;
+}
+
+.text__parragraph p{
+  text-align: justify;
+  margin: 0.3em 0;
+}
+
+.text__parragraph h2{
+  text-align: center;
+}
+
+.text__parragraph a{
+  color: #000;
+}
+
+.text__parragraph span{
+  text-align: left;
+}
+
+.content__cursos{
+  grid-row-start: 1;
+}
+
+.content__cursos h2{
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.cursos__img{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.cursos__img img{
+  height: 100%;
+  width: 100%;
+}
+
+.content__cursos aside hr{
+  margin: 0.8rem 0;
+}
+
+.content__cursos aside a{
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (min-width: 550px) {
+  .content__cursos{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main__content{
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+  }
+
+  .content__cursos{
+    width: 100%;
+    margin: unset;
+    grid-row-start: unset;
+  }
+
+  .content__cursos h2{
+    text-align: left;
+    font-size: 1.3em;
+    margin-bottom: 0.4em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content__cursos h2{
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+  }
 }
