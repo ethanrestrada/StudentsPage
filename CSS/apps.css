@@ -77,6 +77,10 @@ body{
   top: 165px;
 }
 
+.tool__card:hover a{
+  pointer-events: initial;
+}
+
 .tool__card .card__img{
   position: relative;
   width: 125px;
@@ -107,6 +111,7 @@ body{
 .card__text a{
   text-decoration: none;
   color: #000;
+  pointer-events: none;
 }
 
 .card__text a:nth-child(2){
