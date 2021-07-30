@@ -77,10 +77,6 @@ body{
   top: 165px;
 }
 
-.tool__card:hover a{
-  pointer-events: initial;
-}
-
 .tool__card .card__img{
   position: relative;
   width: 125px;
@@ -102,16 +98,15 @@ body{
   display: flex;
   flex-direction: column;
   text-align: center;
-  opacity: 0;
-  transition: 0.5s;
+  opacity: 1;
+  transition: 0.6s ease all;
   position: absolute;
-  top: 200px;
+  top: 250px;
 }
 
 .card__text a{
   text-decoration: none;
   color: #000;
-  pointer-events: none;
 }
 
 .card__text a:nth-child(2){
